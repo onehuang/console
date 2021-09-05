@@ -47,6 +47,7 @@ const (
 	fileSystem           // POSIX compatible file systems
 )
 
+// 对象上传handle
 func registerObjectsHandlers(api *operations.ConsoleAPI) {
 	// list objects
 	api.UserAPIListObjectsHandler = user_api.ListObjectsHandlerFunc(func(params user_api.ListObjectsParams, session *models.Principal) middleware.Responder {

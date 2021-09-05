@@ -28,6 +28,7 @@ import (
 	"github.com/minio/minio-go/v7/pkg/notification"
 )
 
+// 桶事件操作handle
 func registerBucketEventsHandlers(api *operations.ConsoleAPI) {
 	// list bucket events
 	api.UserAPIListBucketEventsHandler = user_api.ListBucketEventsHandlerFunc(func(params user_api.ListBucketEventsParams, session *models.Principal) middleware.Responder {

@@ -53,6 +53,7 @@ func configureFlags(api *operations.ConsoleAPI) {
 	}
 }
 
+// 创建api
 func configureAPI(api *operations.ConsoleAPI) http.Handler {
 
 	// Applies when the "x-token" header is set
